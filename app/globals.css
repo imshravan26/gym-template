@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.carousel {
+    z-index: 0;
+    animation: animate 12s ease-out infinite;
+    background-size: cover;
+}
+@keyframes animate {
+    0%, 100% {
+        background-image: url(../public/hero1.jpg);
+    }
+    33% {
+        background-image: url(../public/hero2.jpg);
+    }
+    66% {
+        background-image: url(../public/hero3.jpg);
+    }
+}
